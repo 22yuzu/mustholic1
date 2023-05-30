@@ -19,5 +19,7 @@ target 'mustholic1' do
   pod 'Firebase/Firestore'
   pod 'FirebaseAnalytics'
   pod 'IQKeyboardManagerSwift'
+  pod 'TextFieldEffects'
+  pod 'FSCalendar'
 
 end

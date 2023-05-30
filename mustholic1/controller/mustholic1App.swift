@@ -10,12 +10,14 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
 import FirebaseAnalytics
+import IQKeyboardManagerSwift
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
+      IQKeyboardManager.shared.enable = true
+      FirebaseApp.configure()
 
     return true
   }
@@ -30,7 +32,7 @@ struct YourApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        ContentView()
+        firstView()
       }
     }
   }
